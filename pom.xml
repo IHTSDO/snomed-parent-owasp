@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.snomed</groupId>
+    <artifactId>snomed-parent-owasp</artifactId>
+    <version>1.0.1</version>
+    <packaging>jar</packaging>
+
+    <name>Snomed Parent OWASP</name>
+    <description>Snomed false positive suppression</description>
+
+    <!--    _                     _            ____    ___    _ _
+           / \   _ __   __ _  ___| |__   ___  |___ \  / _ \  | (_) ___ ___ _ __  ___  ___
+          / _ \ | '_ \ / _` |/ __| '_ \ / _ \   __) || | | | | | |/ __/ _ \ '_ \/ __|/ _ \
+         / ___ \| |_) | (_| | (__| | | |  __/  / __/ | |_| | | | | (_|  __/ | | \__ \  __/
+        /_/   \_\ .__/ \__,_|\___|_| |_|\___| |_____(_)___/  |_|_|\___\___|_| |_|___/\___|
+                |_|                                                                       -->
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <!-- ____
+      |  _ \ ___ _ __   ___  ___
+      | |_) / _ \ '_ \ / _ \/ __|
+      |  _ <  __/ |_) | (_) \__ \
+      |_| \_\___| .__/ \___/|___/
+                |_|              -->
+    <repositories>
+        <repository>
+            <id>ihtsdo-releases</id>
+            <name>ihtsdo-releases</name>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <url>https://nexus3.ihtsdotools.org/repository/maven-releases/</url>
+        </repository>
+        <repository>
+            <id>ihtsdo-snapshots</id>
+            <name>ihtsdo-snapshots</name>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <url>https://nexus3.ihtsdotools.org/repository/maven-snapshots/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>ihtsdo-public-nexus</id>
+            <name>IHTSDO Public Nexus3 Releases</name>
+            <url>https://nexus3.ihtsdotools.org/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ihtsdo-public-nexus</id>
+            <name>IHTSDO Public Nexus3 Snapshots</name>
+            <url>https://nexus3.ihtsdotools.org/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
