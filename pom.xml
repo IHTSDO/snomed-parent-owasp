@@ -6,7 +6,7 @@
 
     <groupId>org.snomed</groupId>
     <artifactId>snomed-parent-owasp</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <name>Snomed Parent OWASP</name>
