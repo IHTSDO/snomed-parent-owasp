@@ -42,4 +42,12 @@
         <packageUrl regex="true">^pkg:maven/org\.quartz\-scheduler/quartz@.*$</packageUrl>
         <cve>CVE-2023-39017</cve>
     </suppress>
+    <suppress>
+        <notes><![CDATA[
+   file name: lucene-analyzers-common-8.11.4.jar.
+   Suppressed because this is a false positive. The jar does not contain the affected package "org.apache.lucene.replicator.http".
+   ]]></notes>
+        <packageUrl>pkg:maven/org.apache.lucene/lucene-analyzers-common@8.11.4</packageUrl>
+        <cve>CVE-2024-45772</cve>
+    </suppress>
 </suppressions>
