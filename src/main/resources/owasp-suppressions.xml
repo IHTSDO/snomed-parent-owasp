@@ -50,4 +50,11 @@
         <packageUrl>pkg:maven/org.apache.lucene/lucene-analyzers-common@8.11.4</packageUrl>
         <cve>CVE-2024-45772</cve>
     </suppress>
+    <suppress>
+        <notes><![CDATA[
+      file name: angular-cookies.js
+      ]]></notes>
+        <packageUrl regex="true">^pkg:javascript/angularjs@.*$</packageUrl>
+        <cve>CVE-2019-10768</cve>
+    </suppress>
 </suppressions>
