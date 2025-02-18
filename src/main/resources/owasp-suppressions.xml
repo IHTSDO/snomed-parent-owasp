@@ -57,4 +57,11 @@
         <packageUrl regex="true">^pkg:javascript/angularjs@.*$</packageUrl>
         <cve>CVE-2019-10768</cve>
     </suppress>
+    <suppress>
+        <notes><![CDATA[
+   file name: textAngular-sanitize.min.js
+   ]]></notes>
+        <packageUrl regex="true">^pkg:javascript/angularjs@.*$</packageUrl>
+        <cve>CVE-2024-21490</cve>
+    </suppress>
 </suppressions>
