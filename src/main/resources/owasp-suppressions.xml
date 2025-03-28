@@ -72,4 +72,11 @@
         <cve>CVE-2023-5072</cve>
         <cve>CVE-2022-45688</cve>
     </suppress>
+    <suppress>
+        <notes><![CDATA[
+        file names: lucene-core-9.9.2.jar, lucene-facet-9.9.2.jar, lucene-highlighter-9.9.2.jar, lucene-analysis-common-9.9.2.jar, lucene-backward-codecs-9.9.2.jar
+    ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.apache\.lucene/lucene-(core|facet|highlighter|analysis-common|backward-codecs)@9\.9\.2$</packageUrl>
+        <cve>CVE-2024-45772</cve>
+    </suppress>
 </suppressions>
