@@ -79,4 +79,11 @@
         <packageUrl regex="true">^pkg:maven/org\.apache\.lucene/lucene-(core|facet|highlighter|analysis-common|backward-codecs)@9\.9\.2$</packageUrl>
         <cve>CVE-2024-45772</cve>
     </suppress>
+    <suppress>
+        <notes><![CDATA[
+      file name: spring-core-6.1.21.jar
+      ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework/spring-core@.*$</packageUrl>
+        <vulnerabilityName>CVE-2025-41242</vulnerabilityName>
+    </suppress>
 </suppressions>
