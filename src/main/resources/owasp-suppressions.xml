@@ -93,4 +93,11 @@
         <packageUrl regex="true">^pkg:maven/com\.ibm\.icu/icu4j@.*$</packageUrl>
         <cve>CVE-2025-5222</cve>
     </suppress>
+    <suppress>
+        <notes>
+            False positive: CVE-2026-0994 ബാധ Apache Jena (jena-arq), not protobuf-java
+        </notes>
+        <packageUrl regex="true">pkg:maven/com\.google\.protobuf/protobuf-java@.*</packageUrl>
+        <cve>CVE-2026-0994</cve>
+    </suppress>
 </suppressions>
