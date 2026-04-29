@@ -111,6 +111,7 @@
         <cve>CVE-2026-41602</cve>
         <cve>CVE-2025-48431</cve>
         <cve>CVE-2026-41603</cve>
+        <cve>CVE-2026-41605</cve>
     </suppress>
 
     <!-- Thymeleaf core -->
