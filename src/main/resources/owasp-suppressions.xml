@@ -107,7 +107,8 @@
         </notes>
         <packageUrl regex="true">pkg:maven/org\.apache\.thrift/libthrift@.*</packageUrl>
         <cve>CVE-2026-41604</cve>
-        <cve>CVE-2026-41636</cve>  
+        <cve>CVE-2026-41636</cve>
+        <cve>CVE-2026-41602</cve>
     </suppress>
 
     <!-- Thymeleaf core -->
