@@ -99,5 +99,28 @@
         </notes>
         <packageUrl regex="true">pkg:maven/com\.google\.protobuf/protobuf-java@.*</packageUrl>
         <cve>CVE-2026-0994</cve>
-    </suppress>   
+    </suppress>
+
+    <suppress until="2026-09-01Z">
+        <notes><![CDATA[
+        CVE-2026-40982 affects spring-cloud-config-server only.
+        Projects use consul/vault config clients → not vulnerable.
+        ]]></notes>
+        <packageUrl regex="true">
+            ^pkg:maven/org\.springframework\.cloud/spring-cloud-(consul|vault)-config@4\.3\.0$
+        </packageUrl>
+        <cve>CVE-2026-40982</cve>
+    </suppress>
+
+    <suppress until="2026-09-01Z">
+        <notes><![CDATA[
+        CVE-2026-40982 only affects spring-cloud-config-server.
+        Starter modules (consul/vault) are not vulnerable.
+        ]]></notes>
+        <packageUrl regex="true">
+            ^pkg:maven/org\.springframework\.cloud/spring-cloud-starter-(consul|vault)-config@4\.3\.0$
+        </packageUrl>
+
+        <cve>CVE-2026-40982</cve>
+    </suppress>
 </suppressions>
