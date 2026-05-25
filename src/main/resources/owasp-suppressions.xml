@@ -99,29 +99,5 @@
         </notes>
         <packageUrl regex="true">pkg:maven/com\.google\.protobuf/protobuf-java@.*</packageUrl>
         <cve>CVE-2026-0994</cve>
-    </suppress>
-
-    <!-- Thymeleaf core -->
-    <suppress>
-        <notes>Whitelist CVE-2026-40477</notes>
-        <gav>org.thymeleaf:thymeleaf:3.1.2.RELEASE</gav>
-        <cve>CVE-2026-40477</cve>
-    </suppress>
-    <suppress>
-        <notes>Whitelist Thymeleaf CVEs</notes>
-        <gav>org.thymeleaf:thymeleaf:3.1.2.RELEASE</gav>
-        <cve>CVE-2026-40478</cve>
-    </suppress>
-
-    <!-- Thymeleaf Spring -->
-    <suppress>
-        <notes>Whitelist CVE-2026-40477</notes>
-        <gav>org.thymeleaf:thymeleaf-spring6:3.1.3.RELEASE</gav>
-        <cve>CVE-2026-40477</cve>
-    </suppress>
-    <suppress>
-        <notes>Whitelist Thymeleaf CVEs</notes>
-        <gav>org.thymeleaf:thymeleaf-spring6:3.1.3.RELEASE</gav>
-        <cve>CVE-2026-40478</cve>
-    </suppress>
+    </suppress>   
 </suppressions>
