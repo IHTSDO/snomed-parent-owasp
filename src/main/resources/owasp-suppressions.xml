@@ -103,7 +103,7 @@
 
     <suppress until="2026-09-01Z">
         <notes><![CDATA[
-        CVE-2026-40982 and CVE-2026-41002 affect spring-cloud-config-server only.
+        CVE-2026-40982, CVE-2026-41002 and CVE-2026-40981 affect spring-cloud-config-server only.
         Projects use consul/vault config clients → not vulnerable.
         ]]></notes>
         <packageUrl regex="true">
@@ -111,11 +111,12 @@
         </packageUrl>
         <cve>CVE-2026-40982</cve>
         <cve>CVE-2026-41002</cve>
+        <cve>CVE-2026-40981</cve>
     </suppress>
 
     <suppress until="2026-09-01Z">
         <notes><![CDATA[
-        CVE-2026-40982 and CVE-2026-41002 only affect spring-cloud-config-server.
+        CVE-2026-40982, CVE-2026-41002 and CVE-2026-40981 only affect spring-cloud-config-server.
         Starter modules (consul/vault) are not vulnerable.
         ]]></notes>
         <packageUrl regex="true">
@@ -124,5 +125,6 @@
 
         <cve>CVE-2026-40982</cve>
         <cve>CVE-2026-41002</cve>
+        <cve>CVE-2026-40981</cve>
     </suppress>
 </suppressions>
