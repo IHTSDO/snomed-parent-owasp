@@ -100,19 +100,6 @@
         <packageUrl regex="true">pkg:maven/com\.google\.protobuf/protobuf-java@.*</packageUrl>
         <cve>CVE-2026-0994</cve>
     </suppress>
-    <suppress>
-        <notes>
-            Temporary suppression for Apache Thrift until 0.23.0 is available in Maven Central.
-            Mitigations applied: max frame size, request timeout, thread limits, internal-only exposure.
-        </notes>
-        <packageUrl regex="true">pkg:maven/org\.apache\.thrift/libthrift@.*</packageUrl>
-        <cve>CVE-2026-41604</cve>
-        <cve>CVE-2026-41636</cve>
-        <cve>CVE-2026-41602</cve>
-        <cve>CVE-2025-48431</cve>
-        <cve>CVE-2026-41603</cve>
-        <cve>CVE-2026-41605</cve>
-    </suppress>
 
     <!-- Thymeleaf core -->
     <suppress>
