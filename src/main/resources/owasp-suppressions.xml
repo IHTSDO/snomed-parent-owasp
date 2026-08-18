@@ -100,6 +100,15 @@
         <packageUrl regex="true">pkg:maven/com\.google\.protobuf/protobuf-java@.*</packageUrl>
         <cve>CVE-2026-0994</cve>
     </suppress>
+    <suppress>
+        <notes><![CDATA[
+   file names: tomcat-embed-core-11.0.24.jar, tomcat-embed-websocket-11.0.24.jar
+   PIP-1171
+   CVE-2026-66299 only affects the bundled WebSocket chat examples web app, which is not included/deployed.
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.apache\.tomcat\.embed/tomcat-embed-(core|websocket)@.*$</packageUrl>
+        <cve>CVE-2026-66299</cve>
+    </suppress>
 
     <suppress until="2026-09-01Z">
         <notes><![CDATA[
